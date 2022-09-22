@@ -7,6 +7,26 @@ export const About = () => {
     <section id="about">
         <Slide left>
         <div className="container">
+            
+            {/* <div className="section-devider my-6 transparent"></div> */}
+            <div className="row align-items-center">
+                <div className="col-md-6">
+                    <h6 className="section-subtitle">Origen</h6>
+                    <h3 className="section-title">Ejemplo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illo a, aut, eum nesciunt obcaecati deserunt ipsam nostrum voluptate recusandae?</p>
+                </div>
+                <div className="col-md-6 order-1 order-sm-first">
+                    <div className="row">
+                        <div className="col">
+                            <img src="images/about-3.jpg" alt="" className="w-100 rounded shadow"/>
+                        </div>
+                        <div className="col">
+                            <img src="images/about-4.jpg" alt="" className="w-100 rounded shadow"/>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+            <div className="section-devider my-6 transparent"></div>
             <div className="row align-items-center">                
                 <div className="col-md-6">
                     <h6 className="section-subtitle">Opening Times</h6>
@@ -29,24 +49,7 @@ export const About = () => {
                     </div>                  
                 </div>
             </div>
-            <div className="section-devider my-6 transparent"></div>
-            <div className="row align-items-center">
-                <div className="col-md-6">
-                    <h6 className="section-subtitle">Origen</h6>
-                    <h3 className="section-title">Ejemplo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illo a, aut, eum nesciunt obcaecati deserunt ipsam nostrum voluptate recusandae?</p>
-                </div>
-                <div className="col-md-6 order-1 order-sm-first">
-                    <div className="row">
-                        <div className="col">
-                            <img src="images/about-3.jpg" alt="" className="w-100 rounded shadow"/>
-                        </div>
-                        <div className="col">
-                            <img src="images/about-4.jpg" alt="" className="w-100 rounded shadow"/>
-                        </div>
-                    </div>                  
-                </div>
-            </div>
+
         </div>
        </Slide>
     </section>
