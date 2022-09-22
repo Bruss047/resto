@@ -1,20 +1,31 @@
-import {React, useState, useEffect} from 'react';
+import React, {useState, useContext} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons';
+
+import { lenguageContext } from './../lenguageContext';
+
 
 export const NavBar = ({content, contentEng}) => {
 
-    let leng="spa";
-
+    const {leng,setLeng} = useContext(lenguageContext);
     const [fields, setFields] = useState(content);
+    const [button, setButton] = useState("ENG");
 
-    useEffect(() => {
-      if(leng!=="spa"){
-        setFields(contentEng);
-      }
-    }, [])
-    
-    
+    const toggleLenguage =()=>{
+        
+        if(button!=="ESP"){
+            setLeng("ENG")
+            setFields(contentEng);
+            setButton("ESP");
+        }else{
+            setLeng("ESP")
+            setFields(content);
+            setButton("ENG");
+        }
+        
+    }
+   
     const {phone, menuOptions} = fields;
     
     return (
@@ -35,9 +46,10 @@ export const NavBar = ({content, contentEng}) => {
                 </a>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link text-primary">Contacto : <span className="pl-2 text-muted">{phone}</span></a>
+                        <a className="nav-link text-primary"><FontAwesomeIcon icon={faPhoneSquareAlt}></FontAwesomeIcon> <span className="pl-2 text-muted">{phone}</span></a>
                     </li>                   
                 </ul>
+                <button className="btn text-warning" style={{marginLeft:10}} onClick={()=>toggleLenguage()}> {button} </button>
             </div>
         </nav>
         

@@ -25,11 +25,23 @@ export const navbarEng={
 /// HEADER DATA ///
 export const header={
     logo:"",
-    subtitle:"Bienvenido a Nuestro Resto",
-    title:"Template de Prueba",
+    subtitle:"La Fonda",
+    title:"Bienvenido a Nuestro Resto",
+}
+export const headerEng={
+    logo:"",
+    subtitle:"La Fonda",
+    title:"Welcome To Our Place",
 }
 
+
+/// ABOUT DATA ///
 export const about={
+    title:"",
+    days:["Days"],
+    aboutUs:"Acerca de Nosotros"
+}
+export const aboutEng={
     title:"",
     days:["Days"],
     aboutUs:"About US"
