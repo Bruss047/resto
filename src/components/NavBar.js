@@ -30,7 +30,7 @@ export const NavBar = ({content, contentEng}) => {
     
     return (
         <>
-        <nav className="navbar nav-first navbar-dark bg-dark">
+        <nav id="home" className="navbar nav-first navbar-dark bg-dark">
             <div className="container">
                 {/* <a className="navbar-brand" >
                     <img src={photo} alt=""/>

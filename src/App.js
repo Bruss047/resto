@@ -1,13 +1,13 @@
-//import './App.css';
+
 import { useState } from 'react'
 import { About } from './components/About';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
 import { NavBar } from './components/NavBar';
-import { GetTable } from './components/GetTable';
 import { Footer } from './components/Footer';
-import { navbar, navbarEng, header, headerEng } from './data/data';
+import { navbar, navbarEng, header, headerEng, about, aboutEng } from './data/data';
 import { lenguageContext } from './lenguageContext';
+import { Staff } from './components/Staff';
 
 
 function App() {
@@ -22,9 +22,10 @@ function App() {
           }}>
       <NavBar content={navbar} contentEng={navbarEng}/>
       <Header content={header} contentEng={headerEng}/>
-      <About/>
-      <MainMenu/>
-      <GetTable/>
+      <About content={about} contentEng={aboutEng}/>
+      <MainMenu content={about} contentEng={aboutEng}/>
+      <Staff content={about} contentEng={aboutEng}/>
+      {/* <GetTable/> */}
       <Footer/>
       </lenguageContext.Provider>
     </>

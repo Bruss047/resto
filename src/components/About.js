@@ -1,8 +1,25 @@
-import React from 'react';
-import Reveal from 'react-reveal/Reveal';
+import React, {useContext, useState, useEffect} from 'react';
 import Slide from 'react-reveal/Slide';
+import { lenguageContext } from './../lenguageContext';
 
-export const About = () => {
+export const About = ({content ,contentEng}) => {
+
+     const {leng} = useContext(lenguageContext);
+     const [fields, setFields] = useState(content);
+  
+    const {epigraph, title, name, days, aboutUs, aboutUsContent} = fields;
+
+
+    useEffect(() => {
+        
+        if(leng!=="ESP"){
+                setFields(contentEng);
+            }else{
+                setFields(content);
+            }
+        
+        }, [leng, contentEng, content]);
+
   return (
     <section id="about">
         <Slide left>
@@ -11,9 +28,9 @@ export const About = () => {
             {/* <div className="section-devider my-6 transparent"></div> */}
             <div className="row align-items-center">
                 <div className="col-md-6">
-                    <h6 className="section-subtitle">Origen</h6>
-                    <h3 className="section-title">Ejemplo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illo a, aut, eum nesciunt obcaecati deserunt ipsam nostrum voluptate recusandae?</p>
+                    <h6 className="section-subtitle">{name}</h6>
+                    <h3 className="section-title">{aboutUs}</h3>
+                    <p>{aboutUsContent}</p>
                 </div>
                 <div className="col-md-6 order-1 order-sm-first">
                     <div className="row">
@@ -29,15 +46,15 @@ export const About = () => {
             <div className="section-devider my-6 transparent"></div>
             <div className="row align-items-center">                
                 <div className="col-md-6">
-                    <h6 className="section-subtitle">Opening Times</h6>
+                    <h6 className="section-subtitle">{epigraph}</h6>
                     
-                    <h3 className="section-title">Horarios de Atención</h3>
-                    <p className="mb-1 font-weight-bold">Monday - Thursday : <span className="font-weight-normal pl-2 text-muted">7:00 am - 12:00 pm</span></p>
-                    <p className="mb-1 font-weight-bold">Friday - Saturday : <span className="font-weight-normal pl-2 text-muted">7:00 am - Midnight</span></p>
-                    <p className="mb-1 font-weight-bold">Saturday - Sunday : <span className="font-weight-normal pl-2 text-muted">9:00 am - 12:00 pm</span></p>
-
-                    <a href="#book-table" className="btn btn-primary btn-sm w-md mt-4">EJEMPLO</a>
-                </div>
+                    <h3 className="section-title">{title}</h3>
+                    {
+                        days.map(days=>(
+                           <p key={days} className="mb-1 font-weight-bold">{days.dias} : <span className="font-weight-normal pl-2 ">{days.horarios} </span></p>     
+                        ))
+                    }
+             </div>
                 <div className="col-md-6">
                     <div className="row">
                         <div className="col">
