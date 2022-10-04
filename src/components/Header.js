@@ -9,9 +9,6 @@ export const Header = ({content ,contentEng}) => {
   const {leng} = useContext(lenguageContext);
   const [fields, setFields] = useState(content);
   
-  const {logo, subtitle, title} = fields;
-
-
   useEffect(() => {
      
      if(leng!=="ESP"){
@@ -21,6 +18,8 @@ export const Header = ({content ,contentEng}) => {
         }
        
   }, [leng, contentEng, content]);
+
+    const {logo, subtitle, title} = fields;
   
 
   return (

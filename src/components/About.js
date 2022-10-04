@@ -50,8 +50,8 @@ export const About = ({content ,contentEng}) => {
                     
                     <h3 className="section-title">{title}</h3>
                     {
-                        days.map(days=>(
-                           <p key={days} className="mb-1 font-weight-bold">{days.dias} : <span className="font-weight-normal pl-2 ">{days.horarios} </span></p>     
+                        days.map((days, index)=>(
+                           <p key={index} className="mb-1 font-weight-bold">{days.dias} : <span className="font-weight-normal pl-2 ">{days.horarios} </span></p>     
                         ))
                     }
              </div>

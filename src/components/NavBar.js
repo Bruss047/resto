@@ -63,8 +63,8 @@ export const NavBar = ({content, contentEng}) => {
 
                     <ul className="navbar-nav mr-auto"> 
                     {
-                        menuOptions.map(option =>(
-                            <li key={option.section} className="nav-item">
+                        menuOptions.map((option, index) =>(
+                            <li key={index} className="nav-item">
                               <a className="nav-link" href={option.href}>{option.section}</a>
                             </li>
                         ))
