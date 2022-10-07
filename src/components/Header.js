@@ -25,7 +25,7 @@ export const Header = ({content ,contentEng}) => {
   return (
      <header className="header">
         <div className="overlay">
-            <img src="images/logoFonda.png" className="logo" alt="Fonda resto san telmo"/>
+            <img src="images/logoFonda.png" loading='lazy' className="logo" alt="Fonda restaurante san telmo"/>
             <h1 className="subtitle">{subtitle}</h1>
             <h1 className="title">{title}</h1> 
             {/* <a className="btn btn-primary mt-3" href="/#">EJEMPLO</a>  */}

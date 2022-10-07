@@ -31,7 +31,7 @@ export const Staff = ({content, contentEng}) => {
                     roles.map((rol, index)=>(
                         <div key={index} className="col-md-4 my-3">
                             <div className="team-wrapper text-center">
-                                <img src="images/cheff.jpg" className=" imgSize rounded shadow" alt=""/>
+                                <img src="images/cheffw.webp" loading='lazy' className=" imgSize rounded shadow" alt=""/>
                                 <h5 className="my-3">{rol.rol}</h5>
                                 <p>{rol.desc}</p>
                                 <h6 className="socials mt-3">

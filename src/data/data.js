@@ -28,14 +28,14 @@ export const navbarEng={
 /// HEADER DATA ///
 export const header={
     logo:"",
-    subtitle:"La Fonda",
+    subtitle:"Fonda",
     title:"Comidas Argentinas",
 }
 
 /// ENG:
 export const headerEng={
     logo:"",
-    subtitle:"La Fonda",
+    subtitle:"Fonda",
     title:"Argentinian Food",
 }
 
@@ -65,12 +65,12 @@ export const aboutEng={
 export const menu={
     titleMenu:"Buena Comida",
     subtitleMenu:"Destacados",
-    platos:[{imagen:"images/comida1.jpg", nombre:'Pernil', desc:'Ternera con 14 horas de cocción'},
-            {imagen:"images/comida3.jpg", nombre:'Ragú de Ternera', desc:'Ternera con 14 horas de cocción'},
-            {imagen:"images/comida1.jpg", nombre:'Pernil Puerto', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'},
-            {imagen:"images/comida1.jpg", nombre:'Bondiola Desmechada', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'},
-            {imagen:"images/comida1.jpg", nombre:'Choripan Fonda', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'},
-            {imagen:"images/comida1.jpg", nombre:'Picada San Telmo', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'}],
+    platos:[{imagen:"images/tablacarnesw.webp", nombre:'Tabla Argentina', desc:'CHORIZO - MORCILLA - EMPANADA - BONDIOLA A LA CERVEZA - BIFE DE CHORIZO - PERNIL DE CERDO - PERNIL DE TERNERA - PAPAS Y ENSALADA - SIN ACHURAS.'},
+            {imagen:"images/tablacarnesw.webp", nombre:'Ojo de Bife', desc:'OJO DE BIFE CON GUARNICIÓN'},
+            {imagen:"images/tablacarnesw.webp", nombre:'Tabla de Pastas', desc:'SORRENTINOS DE RICOTA Y NUEZ - SORRENTINOS CUATRO QUESOS – FETUCCINI CON RAGUÑOQUIS RELLENOS - SALSAS: RAGÚ – POMODORO, BOLOGNESA, SALSA CREMA'},
+            {imagen:"images/tablacarnesw.webp", nombre:'Bondiola Desmechada', desc:'QUESO CHEDDAR - PROVENZAL - FRITAS'},
+            {imagen:"images/tablacarnesw.webp", nombre:'Choripan Fonda', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'},
+            {imagen:"images/tablacarnesw.webp", nombre:'Picada San Telmo', desc:'Accusamus libero quo tempore suscipit molestias qui quam illo facere aspernatur esse! Doloribus'}],
 
     titleDrinks:"De Autor",
     subtitleDrinks:"Cocteles",

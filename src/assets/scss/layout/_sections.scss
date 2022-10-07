@@ -24,18 +24,18 @@ section {
 		padding-bottom: 140px !important;
 	}
 
-	&.pattern-style-1 {
-		background-image: url(../../imgs/style-1.png);
-	}
-	&.pattern-style-2 {
-		background-image: url(../../imgs/style-2.png);
-	}
-	&.pattern-style-3 {
-		background-image: url(../../imgs/style-3.png);
-	}
-	&.pattern-style-4 {
-		background-image: url(../../imgs/style-4.png);
-	}
+	// &.pattern-style-1 {
+	// 	background-image: url(../../imgs/style-1.png);
+	// }
+	// &.pattern-style-2 {
+	// 	background-image: url(../../imgs/style-2.png);
+	// }
+	// &.pattern-style-3 {
+	// 	background-image: url(../../imgs/style-3.png);
+	// }
+	// &.pattern-style-4 {
+	// 	background-image: url(../../imgs/style-4.png);
+	// }
 
 	&.has-overlay {
 		position: relative;
@@ -60,7 +60,7 @@ section {
 
 	&.has-img-bg {
 		position: relative;
-		background: url(../../../../public/images/background2edit.jpg) no-repeat center top fixed;
+		background: url(../../../../public/images/menubackground.webp) no-repeat center top fixed;
 		background-size: cover;
 		color: $white;
 
@@ -85,7 +85,7 @@ section {
 .section-subtitle {
 	font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1200 - 320)));
 	font-weight: 400;
-	margin-bottom: 0px;
+	// margin-bottom: 0px;
 	opacity: .7;
 	
 	@include media-breakpoint-up(lg) {
@@ -95,7 +95,7 @@ section {
 
 .section-title {
 	font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
-	margin-bottom: 15px; 
+	// margin-bottom: 15px; 
 	
 	@include media-breakpoint-up(lg) {
 		font-size: 30px;

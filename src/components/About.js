@@ -58,10 +58,10 @@ export const About = ({content ,contentEng}) => {
                 <div className="col-md-6">
                     <div className="row">
                         <div className="col">
-                            <img alt="" src="images/about-1.jpg" className="w-100 rounded shadow"/>
+                            <img alt="" src="images/about-1webp.webp" loading='lazy' className="w-100 rounded shadow"/>
                         </div>
                         <div className="col">
-                            <img alt="" src="images/about-2.jpg" className="w-100 rounded shadow"/>
+                            <img alt="" src="images/about-2w.webp" loading='lazy' className="w-100 rounded shadow"/>
                         </div>
                     </div>                  
                 </div>
