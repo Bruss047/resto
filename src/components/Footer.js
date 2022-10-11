@@ -25,7 +25,7 @@ export const Footer = ({content, contentEng}) => {
                 <h4 className='text-center' style={{ color: 'white' }}>{title}</h4>
                 <div className="mb-4 mapouter text-center">
                     <div className="gmap_canvas">
-                        <iframe style={{ borderRadius:10, height: 203, frameborder:0, scrolling:"no", marginheight:0, marginwidth:0 }} 
+                        <iframe title="fonda restaurante" loading="lazy" style={{ borderRadius:10, height: 203, frameborder:0, scrolling:"no", marginheight:0, marginwidth:0 }} 
                            id="gmap_canvas" src={"https://maps.google.com/maps?q=San%20Telmo%20-%20Carlos%20Calvo%20475&t=&z=15&ie=UTF8&iwloc=&output=embed"}>
                            </iframe></div>
                            <h6 className='text-center text-light'>Carlos Calvo 475 Local 34. - San Telmo</h6>

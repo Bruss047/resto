@@ -1,6 +1,4 @@
 import React, {useContext, useEffect, useState} from 'react';
-
-//import photo1 from '../assets/imgs/section.jpg';
 import { lenguageContext } from './../lenguageContext';
 //const checkMark = require('../assets/imgs/logotest.png')
 
@@ -23,13 +21,15 @@ export const Header = ({content ,contentEng}) => {
   
 
   return (
-     <header className="header">
+     <header className="headerSection">
+
         <div className="overlay">
-            <img src="images/logoFonda.png" loading='lazy' className="logo" alt="Fonda restaurante san telmo"/>
+            <img src={"images/logoFondawebp.webp"} className="logo" alt="Fonda restaurante san telmo"/>
             <h1 className="subtitle">{subtitle}</h1>
             <h1 className="title">{title}</h1> 
             {/* <a className="btn btn-primary mt-3" href="/#">EJEMPLO</a>  */}
-        </div>      
+        </div>   
+     
     </header>
   )
 }

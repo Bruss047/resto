@@ -1,8 +1,11 @@
-.header {
+.headerSection {
     position: relative;
     min-height: 650px;
-    background: url(../../../../public/images/portadawebp.webp) no-repeat center center fixed;
+   
+    background: url(../../../../public/images/portadawebp.webp)no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
+    -webkit-transform: translate3d(0,0,0);
 
     .overlay {
         position: absolute;
@@ -67,3 +70,26 @@
         background: lighten($primary, 25%) !important;
     }
 }
+
+
+
+
+// @media (max-width: 1600px){
+//     .header{
+//     background: url(../../../../public/images/portadawebp.webp) no-repeat center;
+//     -webkit-background-size: cover;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     }
+// }
+
+// @media (max-width: 600px){
+    
+//     .header{
+//     background: url(../../../../public/images/portadawebp.webp) no-repeat center;
+//     -webkit-background-size: cover;
+//     background-size: cover;
+//     background-attachment: fixed;
+  
+//     }
+// }

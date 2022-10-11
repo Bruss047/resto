@@ -19,10 +19,6 @@ function App() {
 
   return (
     <>
-    <lenguageContext.Provider value={{ 
-              leng,
-              setLeng
-          }}>
       <Helmet>
         <title>Fonda Resto</title>
         <meta 
@@ -32,15 +28,20 @@ function App() {
           name="keywords"
           content="Restorán, resto, restaurante, restaurant, local de comidas, san telmo, capital federal, mercado san telmo, caba, comidas argentinas, pernil de ternera, carnes, tragos, cocteles"/>
       </Helmet>
-        <NavBar content={navbar} contentEng={navbarEng}/>
-        <Header content={header} contentEng={headerEng}/>
-        <About content={about} contentEng={aboutEng}/>
-        <MainMenu content={menu} contentEng={menuEng}/>
-        <Staff content={staff} contentEng={staffEng}/>
-        {/* <GetTable/> */}
-        <Footer content={footer} contentEng={footerEng}/>
-        </lenguageContext.Provider>
-    </>
+        <lenguageContext.Provider value={{ 
+                  leng,
+                  setLeng
+              }}>
+        
+            <NavBar content={navbar} contentEng={navbarEng}/>
+            <Header content={header} contentEng={headerEng}/>
+            <About content={about} contentEng={aboutEng}/>
+            <MainMenu content={menu} contentEng={menuEng}/>
+            <Staff content={staff} contentEng={staffEng}/>
+            {/* <GetTable/> */}
+            <Footer content={footer} contentEng={footerEng}/>
+            </lenguageContext.Provider>
+        </>
   );
 }
 

@@ -21,8 +21,9 @@ export const Staff = ({content, contentEng}) => {
 
   return (
     <>
-    <Zoom top>
+    
         <section id="team">
+            <Zoom top>
         <div className="container">
             <h6 className="section-subtitle text-center">{subtitle}</h6>
             <h3 className="section-title mb-5 text-center">{title}</h3>
@@ -35,10 +36,10 @@ export const Staff = ({content, contentEng}) => {
                                 <h5 className="my-3">{rol.rol}</h5>
                                 <p>{rol.desc}</p>
                                 <h6 className="socials mt-3">
-                                    <a href="/#" className="px-2"><i className="ti-facebook"></i></a>
+                                    {/* <a href="/#" className="px-2"><i className="ti-facebook"></i></a>
                                     <a href="/#" className="px-2"><i className="ti-twitter"></i></a>
                                     <a href="/#" className="px-2"><i className="ti-instagram"></i></a>
-                                    <a href="/#" className="px-2"><i className="ti-google"></i></a>
+                                    <a href="/#" className="px-2"><i className="ti-google"></i></a> */}
                                 </h6>
                             </div>
                         </div>
@@ -87,8 +88,9 @@ export const Staff = ({content, contentEng}) => {
                 </div>  */}
             </div>
         </div>
+        </Zoom>
     </section>
-    </Zoom>
+
     </>
   )
 }

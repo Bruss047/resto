@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import Slide from 'react-reveal/Slide';
+//import Zoom from 'react-reveal/Zoom';
 import { lenguageContext } from './../lenguageContext';
 
 export const MainMenu = ({content, contentEng}) => {
@@ -7,7 +8,7 @@ export const MainMenu = ({content, contentEng}) => {
      const {leng} = useContext(lenguageContext);
      const [fields, setFields] = useState(content);  
 
-      useEffect(() => {
+    useEffect(() => {
      
      if(leng!=="ESP"){
             setFields(contentEng);
@@ -21,10 +22,12 @@ export const MainMenu = ({content, contentEng}) => {
 
   return (
     <section id="menu" className="has-img-bg">
-        <Slide right>
+        {/* <Zoom top> */}
         <div className="container">
+            <Slide right>
             <h6 className="section-subtitle text-center">{titleMenu}</h6>
             <h3 className="section-title text-center">{subtitleMenu}</h3>
+            </Slide>
             <div className="card bg-light">
                 <div className="card-body px-4 pb-4 text-center"> 
                 <div className="row text-left">
@@ -48,7 +51,7 @@ export const MainMenu = ({content, contentEng}) => {
             </div> 
             </div>                 
         </div>
-         </Slide>
+         {/* </Zoom> */}
         
        {/* BEBIDAS */}
        <Slide left>
@@ -60,7 +63,7 @@ export const MainMenu = ({content, contentEng}) => {
                     <div className="row text-left">
 
                         {
-                        tragos.map((trago, index) => (
+                        tragos.map((trago, index) => (///////////////<--------
                             trago.id%2!==0 ? <div key={index} className="col-md-12 my-4 ">
                                     <div className="flex-grow-1 row text-dark">
                                         <div className="img-holder-coctail text-center col-md-6 ">
@@ -72,7 +75,8 @@ export const MainMenu = ({content, contentEng}) => {
                                         </div>
                                 </div>
                       
-                        </div> :
+                        </div>
+                         :
                         <div key={index} className="col-md-12 my-4 ">
                                     <div className="flex-grow-1 row">
                                         <div  className=' col-md-6 my-4 order-sm-first order-last border border-left-0 border-top-0 border-right-0'>

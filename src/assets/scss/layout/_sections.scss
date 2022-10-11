@@ -60,14 +60,19 @@ section {
 
 	&.has-img-bg {
 		position: relative;
-		background: url(../../../../public/images/menubackground.webp) no-repeat center top fixed;
-		background-size: cover;
+		background: url(../../../../public/images/m22.webp)no-repeat center center;
+		 //height : 100vh;
+        background-attachment: fixed; // key
+        background-size: cover;
+		-webkit-transform: translate3d(0,0,10);
+  
 		color: $white;
 
 		* {
 			position: relative;
 			z-index: 100;
 		}
+			
 
 		&:after {
 			content: '';
