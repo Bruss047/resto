@@ -1,16 +1,18 @@
 import React, {useContext, useEffect, useState} from 'react';
 import { lenguageContext } from './../lenguageContext';
+
 //const checkMark = require('../assets/imgs/logotest.png')
 
 export const Header = ({content ,contentEng}) => {
 
   const {leng} = useContext(lenguageContext);
   const [fields, setFields] = useState(content);
-  
+  console.log("HEader renderizado")
   useEffect(() => {
      
      if(leng!=="ESP"){
             setFields(contentEng);
+            
         }else{
             setFields(content);
         }
@@ -21,6 +23,8 @@ export const Header = ({content ,contentEng}) => {
   
 
   return (
+    <>
+
      <header className="headerSection">
 
         <div className="overlay">
@@ -31,5 +35,6 @@ export const Header = ({content ,contentEng}) => {
         </div>   
      
     </header>
+    </>
   )
 }

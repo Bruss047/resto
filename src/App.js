@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 import { About } from './components/About';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
@@ -28,19 +29,20 @@ function App() {
           name="keywords"
           content="Restorán, resto, restaurante, restaurant, local de comidas, san telmo, capital federal, mercado san telmo, caba, comidas argentinas, pernil de ternera, carnes, tragos, cocteles"/>
       </Helmet>
-        <lenguageContext.Provider value={{ 
-                  leng,
-                  setLeng
-              }}>
-        
+      <lenguageContext.Provider value={{ 
+                leng,
+                setLeng
+            }}>
             <NavBar content={navbar} contentEng={navbarEng}/>
             <Header content={header} contentEng={headerEng}/>
             <About content={about} contentEng={aboutEng}/>
             <MainMenu content={menu} contentEng={menuEng}/>
-            <Staff content={staff} contentEng={staffEng}/>
-            {/* <GetTable/> */}
+            <Staff content={staff} contentEng={staffEng}/> 
             <Footer content={footer} contentEng={footerEng}/>
-            </lenguageContext.Provider>
+        </lenguageContext.Provider>
+      
+
+            {/* <GetTable/> */}
         </>
   );
 }

@@ -7,8 +7,6 @@ export const About = ({content ,contentEng}) => {
      const {leng} = useContext(lenguageContext);
      const [fields, setFields] = useState(content);
   
-    const {epigraph, title, name, days, aboutUs, aboutUsContent} = fields;
-
 
     useEffect(() => {
         
@@ -19,6 +17,8 @@ export const About = ({content ,contentEng}) => {
             }
         
         }, [leng, contentEng, content]);
+
+    const {epigraph, title, name, days, aboutUs, aboutUsContent} = fields;
 
   return (
     <section id="about">
